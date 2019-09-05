@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+<head>
+	<meta charset="UTF-8">
+	<title>Tower Of Hanoi</title>
+	<link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<script type="text/javascript" src="towerOfHanoi.js"></script>
+	<div class="container">
+		<div id="StartScreen">
+			<button onclick="startGame(0)" class="btn" id="StartButton">Play Game</button>
+		</div>
+
+		<div id="GameScreen" style="visibility: hidden">
+			<div id="pole1"></div>
+			<div id="pole2"></div>
+			<div id="pole3"></div>
+			<div id="piece1"></div>
+			<div id="piece2"></div>
+			<div id="piece3"></div>
+			<div id="piece4"></div>
+			<div id="piece5"></div>
+			<button onclick="nextStep()" class="btn" id="NextStep">Next Step</button>
+			<p id="stepInfo"></p>
+			<div id="complete">
+				<h1>Complete!</h1>
+			</div>
+		</div>
+		<div id="EndGameScreen" style="visibility: hidden">
+			<button onclick="playAgain()" class="btn" id="PlayAgainButton" style="top:80%; left: 40%">Play Again</button>
+			<button onclick="resetGame()" class="btn" id="ResetButton" style="top:80%; left: 60%">Reset Game</button>
+		</div>
+
+	</div>
+</body>
+</html>
